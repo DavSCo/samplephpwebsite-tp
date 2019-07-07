@@ -8,7 +8,9 @@ class FunctionsTest extends TestCase
 {
     public function testSiteNameIsOk() 
     {
-        $siteName = siteName();
-        echo $siteName;
+        // $siteName = siteName();
+        $this->mock
+        ->method('siteName')
+        ->will($this->returnValue('foo'));
     }
 }
