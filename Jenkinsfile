@@ -14,11 +14,11 @@
 
 pipeline {
     agent any
-    def commit_id
     triggers { 
         cron('H * * * *') 
     }
     stages {
+    def commit_id
         stage('Preparation') {
             checkout scm
             sh "git rev-parse --short HEAD > .git/commit-id"                        
