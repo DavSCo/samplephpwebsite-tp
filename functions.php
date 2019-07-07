@@ -1,5 +1,5 @@
 <?php
-
+class Functions {
 /**
  * Displays site name.
  * @test
@@ -70,4 +70,6 @@ function pageContent()
 function run()
 {
     include config('template_path').'/template.php';
+}
+
 }
