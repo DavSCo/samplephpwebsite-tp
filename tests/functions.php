@@ -1,5 +1,5 @@
 <?php
-require '../functions.php';
+include('../functions.php');
 
 class FunctionsTest extends PHPUnit_Framework_TestCase
 {
