@@ -7,9 +7,4 @@ class FunctionsTest extends PHPUnit_Framework_TestCase
     {
         siteName()->willReturn("Simple PHP Website");
     }
-
-    public function siteNameIsOk2() 
-    {
-        siteName()->willReturn("Simple PHP Website");
-    }
 }
