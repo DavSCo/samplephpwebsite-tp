@@ -1,4 +1,5 @@
 FROM php:7.1
 
-# RUN apt-get update && apt-get install phpunit
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+
 

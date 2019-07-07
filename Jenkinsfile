@@ -11,7 +11,7 @@ node {
         commit_id = readFile('.git/commit-id').trim()
     }
     stage('build docker image') {
-        sh 'docker image build -t myapp:2.0 .'
+        sh 'docker image build -t myapp:3.0 .'
     }
     stage('Test') {
         sh 'phpunit tests/functionsTest.php'
