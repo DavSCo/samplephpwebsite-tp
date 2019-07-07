@@ -1,5 +1,5 @@
 <?php
-include('../functions.php');
+include(dirname(__FILE__).'/../functions.php');
 
 class FunctionsTest extends PHPUnit_Framework_TestCase
 {
