@@ -21,10 +21,11 @@ pipeline {
     triggers {
         cron('H * * * *') 
     }
-    def commit_id
     stages {
         stage('Preparation') {
             steps {
+                def commit_id
+
                 checkout scm
                 sh "git rev-parse --short HEAD > .git/commit-id"                        
                 commit_id = readFile('.git/commit-id').trim()
