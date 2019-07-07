@@ -14,7 +14,7 @@ node {
         sh 'docker image build -t myapp:1.0 .'
     }
     stage('Test') {
-        sh 'phpunit tests/functions.php'
+        sh 'phpunit tests/functionsTest.php'
     }
     
 }
