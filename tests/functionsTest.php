@@ -1,12 +1,14 @@
 <?php
 // include(dirname(__FILE__).'/../functions.php');
+namespace Tests\SimplePhpWebsite\Functions;
+
+use SimplePhpWebsite\Functions\Functions;
 
 class FunctionsTest extends PHPUnit_Framework_TestCase
 {
-    public function siteName_is_ok() 
+    public function siteNameIsOk() 
     {
-        include(dirname(__FILE__).'/../functions.php');
-        $result = Functions::siteName();
-        $this->assertEquals("Simple PHP Website", $result);
+        $siteName = Functions::siteName();
+        $this->assertEquals("Simple PHP Website", $siteName);
     }
 }

@@ -1,4 +1,6 @@
 <?php
+namespace SimplePhpWebsite\Functions;
+
 class Functions {
 /**
  * Displays site name.
