@@ -13,5 +13,8 @@ node {
     stage('build docker image') {
         sh 'docker image build -t myapp:1.0 .'
     }
+    stage('Test') {
+        sh 'phpunit --version'
+    }
     
 }
