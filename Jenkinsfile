@@ -22,7 +22,6 @@ pipeline {
         cron('H * * * *') 
     }
     stages {
-        def commit_id
         stage('Preparation') {
             steps {
                 checkout scm
