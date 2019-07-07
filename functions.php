@@ -1,7 +1,7 @@
 <?php
-namespace SimplePhpWebsite\Functions;
+// namespace SimplePhpWebsite\Functions;
 
-class Functions {
+// class Functions {
 /**
  * Displays site name.
  * @test
@@ -74,4 +74,4 @@ function run()
     include config('template_path').'/template.php';
 }
 
-}
+// }
