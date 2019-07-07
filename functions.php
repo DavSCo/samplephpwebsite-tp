@@ -2,6 +2,7 @@
 
 /**
  * Displays site name.
+ * @test
  */
 function siteName()
 {
