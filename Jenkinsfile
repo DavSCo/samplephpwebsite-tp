@@ -21,6 +21,7 @@ pipeline {
     triggers {
         cron('H * * * *') 
     }
+    def commit_id
     stages {
         stage('Preparation') {
             steps {
