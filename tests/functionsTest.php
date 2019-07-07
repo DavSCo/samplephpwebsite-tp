@@ -9,6 +9,7 @@ class FunctionsTest extends TestCase
     public function testSiteNameIsOk() 
     {
         $siteName = siteName();
+        echo $siteName;
         $this->assertEquals("Simple PHP Website", $siteName);
     }
 }
