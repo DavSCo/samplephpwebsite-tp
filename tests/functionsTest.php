@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class FunctionsTest extends TestCase
 {
-    public function siteNameIsOk() 
+    public function testSiteNameIsOk() 
     {
         $siteName = Functions::siteName();
         $this->assertEquals("Simple PHP Website", $siteName);
