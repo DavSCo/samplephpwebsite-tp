@@ -10,6 +10,6 @@ class FunctionsTest extends TestCase
     {
         $siteName = siteName();
         echo $siteName;
-        $this->assertEquals("Simple PHP Website", $siteName);
+        $this->willReturn("Simple PHP Website");
     }
 }
