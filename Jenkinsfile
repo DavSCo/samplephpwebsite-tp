@@ -6,7 +6,7 @@ node {
         commit_id = readFile('.git/commit-id').trim()
     }
     stage('build docker image') {
-        sh 'docker image build -t myapp:1.0 .'
+        sh 'docker ps'
     }
     
 }
