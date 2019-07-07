@@ -1,11 +1,11 @@
 php:
-    image: fpm-mysqli
+    image: myapp:2.0
     volumes:
-      - ./v1:/var/www/v1
+      - .:/var/www/v2
 web:
-  image: nginx
+  image: nginx:1.12
   volumes:
-   - ./v1:/var/www/v1
+   - .:/var/www/v2
    - ./default.conf:/etc/nginx/conf.d/default.conf
   ports:
    - "80:80"
