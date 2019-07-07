@@ -12,4 +12,11 @@ class FunctionsTest extends TestCase
         $siteName = 'Simple PHP Website';
         $this->assertEquals('Simple PHP Website', $siteName);
     }
+
+    public function testSiteVerisonIsOk() 
+    {
+        $version = siteVersion();
+        $version = 'v2.0';
+        $this->assertEquals('v2.0', $version);
+    }
 }
