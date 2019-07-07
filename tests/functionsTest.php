@@ -3,7 +3,7 @@ include(dirname(__FILE__).'/../functions.php');
 // namespace Tests\SimplePhpWebsite\Tests;
 
 // use SimplePhpWebsite\Functions\Functions;
-// use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class FunctionsTest extends TestCase
 {
