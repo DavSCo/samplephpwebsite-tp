@@ -1,6 +1,6 @@
 <?php
 // include(dirname(__FILE__).'/../functions.php');
-namespace Tests\SimplePhpWebsite\Functions;
+namespace Tests\SimplePhpWebsite\Tests;
 
 use SimplePhpWebsite\Functions\Functions;
 
