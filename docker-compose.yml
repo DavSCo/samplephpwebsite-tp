@@ -1,0 +1,13 @@
+php:
+    image: myapp:2.0
+    volumes:
+      - .:/var/www/v2
+web:
+  image: nginx:1.12
+  volumes:
+   - .:/var/www/v2
+   - ./default.conf:/etc/nginx/conf.d/default.conf
+  ports:
+   - "80:80"
+  links:
+      - php
