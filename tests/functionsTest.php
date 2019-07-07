@@ -16,7 +16,7 @@ class FunctionsTest extends TestCase
     public function testSiteVerisonIsOk() 
     {
         $version = siteVersion();
-        $version = 'v2.0';
-        $this->assertEquals('v2.0', $version);
+        $version = 'v1.0';
+        $this->assertEquals('v1.0', $version);
     }
 }
