@@ -1,5 +1,6 @@
 node {
     def commit_id
+    triggers { cron('H * * * *') }
     stage('Preparation') {
         checkout scm
         sh "git rev-parse --short HEAD > .git/commit-id"                        
