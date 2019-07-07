@@ -3,8 +3,9 @@
 namespace Tests\SimplePhpWebsite\Tests;
 
 use SimplePhpWebsite\Functions\Functions;
+use PHPUnit\Framework\TestCase;
 
-class FunctionsTest extends PHPUnit_Framework_TestCase
+class FunctionsTest extends TestCase
 {
     public function siteNameIsOk() 
     {
